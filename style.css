@@ -1,0 +1,74 @@
+/* Universal */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Inter", sans-serif;
+    padding-top:100px;
+}
+
+/* Common CSS */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width:90%;
+    max-width: 1320px;
+    margin:0 auto;
+}
+
+.btn{
+    background:#2563EB;
+    color:#ffffff;
+    font-weight: 700;
+    transition: .3s;
+    border:none;
+    padding:12px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #0040c0;
+}
+
+/*  Navbar Section */
+
+header{
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+
+.navbar-parent{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul{
+    display: flex;
+    gap:30px;
+}
+nav a{
+    color:#575757;
+    transition: .3s;
+}
+nav a{
+    color:#575757;
+}
+
+nav a:hover{
+    color:#0040c0;
+}
+
