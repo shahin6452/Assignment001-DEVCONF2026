@@ -27,14 +27,14 @@ a {
 }
 
 .btn {
-        background: #2563EB;
-        color: #ffffff;
-        font-weight: 700;
-        border: none;
-        padding: 12px 35px;
-        border-radius: 10px;
-        cursor: pointer;
-
+    background: #2563EB;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
 }
 
 .btn:hover {
@@ -68,6 +68,7 @@ nav ul {
 
 nav a {
     color: #575757;
+    transition: .3s;
 }
 
 nav a:hover {
@@ -117,6 +118,7 @@ nav a:hover {
     border-radius: 10px;
     cursor: pointer;
     margin-top: 30px;
+    transition: .3s;
 }
 
 .hero-button:hover {
@@ -138,7 +140,7 @@ nav a:hover {
 .speaker-card-parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 40px 0;
+    margin: 50px 0;
     gap: 30px;
 }
 
@@ -198,21 +200,22 @@ nav a:hover {
 }
 
 .pricing-card,
-.pricing-card-pro{
+.pricing-card-pro {
     border-radius: 10px;
     border: 1px solid #E5E7EB;
     padding: 30px;
-    width:100%;  
+    width: 100%;
 }
 
-.pricing-card-heading{
+.pricing-card-heading {
     font-size: 12px;
     font-weight: 600;
     color: #888888;
     letter-spacing: .3px;
     margin-bottom: 8px;
 }
-.pricing-card-pro-heading{
+
+.pricing-card-pro-heading {
     font-size: 12px;
     font-weight: 600;
     color: #93C5FD;
@@ -220,24 +223,26 @@ nav a:hover {
     margin-bottom: 8px;
 }
 
-.pricing-card-amount{
+.pricing-card-amount {
     font-size: 35px;
     font-weight: 700;
     color: #0D1B2A;
 }
-.pricing-card-pro-amount{
+
+.pricing-card-pro-amount {
     font-size: 35px;
     font-weight: 700;
     color: #FFFFFF;
 }
 
-.pricing-card-person{
+.pricing-card-person {
     font-size: 12px;
     color: #888888;
     padding-bottom: 20px;
     border-bottom: .5px solid #E5E7EB;
 }
-.pricing-card-pro-person{
+
+.pricing-card-pro-person {
     font-size: 12px;
     color: #ebebeb;
     padding-bottom: 20px;
@@ -246,72 +251,114 @@ nav a:hover {
 }
 
 .pricing-card-content-list ul,
-.pricing-card-pro-content-list{
+.pricing-card-pro-content-list {
     padding-left: 16px;
     margin-top: 20px;
 }
 
-.pricing-card-pro{
-    background:#0D1B2A;
+.pricing-card-pro {
+    background: #0D1B2A;
 }
 
-.pricing-card-content-list ul li{
-    color:#333333;
+.pricing-card-content-list ul li {
+    color: #333333;
     font-size: 12px;
     margin-top: 10px;
 }
-.pricing-card-pro-content-list ul li{
-    color:#FFFFFF;
+
+.pricing-card-pro-content-list ul li {
+    color: #FFFFFF;
     font-size: 12px;
     margin-top: 10px;
     opacity: 80%;
 }
 
-.pricing-card-content-list ul li::marker{
-    color:#2563EB;
+.pricing-card-content-list ul li::marker {
+    color: #2563EB;
 }
 
-.pricing-card-pro-content-list ul li::marker{
-    color:#60A5FA;
+.pricing-card-pro-content-list ul li::marker {
+    color: #60A5FA;
 }
 
 
-.pricing-card-standard-btn{
-    width:100%;
-    color:#2563EB;
-    border:1px solid #2563EB;
-    background:transparent;
-    padding:10px 0px;
+.pricing-card-standard-btn {
+    width: 100%;
+    color: #2563EB;
+    border: 1px solid #2563EB;
+    background: transparent;
+    padding: 10px 0px;
     border-radius: 10px;
     font-size: 14px;
     margin-top: 25px;
     cursor: pointer;
+    transition: .3s;
 }
 
-.pricing-card-standard-btn:hover{
+.pricing-card-standard-btn:hover {
     background: #ebebeb;
 }
 
-.pricing-card-pro-btn{
-    width:100%;
-    padding:10px 0px;
+.pricing-card-pro-btn {
+    width: 100%;
+    padding: 10px 0px;
     font-weight: 500;
     margin-top: 25px;
 }
 
-.pricing-card-team-btn{
-    width:100%;
-    color:#0D1B2A;
-    border:1px solid #0D1B2A;
-    background:transparent;
-    padding:10px 0px;
+.pricing-card-team-btn {
+    width: 100%;
+    color: #0D1B2A;
+    border: 1px solid #0D1B2A;
+    background: transparent;
+    padding: 10px 0px;
     border-radius: 10px;
     font-size: 14px;
     margin-top: 25px;
     cursor: pointer;
+    transition: .3s;
 }
 
-.pricing-card-team-btn:hover{
+.pricing-card-team-btn:hover {
     background: #ebebeb;
 }
 
+
+/* Footer Section */
+
+footer {
+    background: #0D1B2A;
+}
+
+.footer-section{
+    padding:30px 0px;
+}
+
+.footer-first-section-parent{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(58, 58, 58);
+}
+
+.social-media-icon{
+    display: flex;
+    gap:20px;
+}
+
+.footer-second-section-parent{
+    display: flex;
+    justify-content: space-between;
+    margin-top:25px;
+}
+
+.footer-second-section-parent p,
+.common-link a{
+    font-size: 16px;
+    color: #D1D5DB;
+    opacity: 60%;
+}
+.common-link{
+    display: flex;
+    gap:25px;
+}
