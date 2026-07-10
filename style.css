@@ -159,7 +159,7 @@ nav a:hover {
 }
 
 .speaker-content small {
-    font-size: 10px;
+    font-size: 12px;
     color: #2563EB;
     font-weight: 600;
     display: inline-block;
@@ -267,13 +267,13 @@ nav a:hover {
 .pricing-card-content-list ul li {
     color: #333333;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .pricing-card-pro-content-list ul li {
     color: #FFFFFF;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 15px;
     opacity: 80%;
 }
 
@@ -367,16 +367,16 @@ nav a:hover {
     font-weight: 700;
     display: flex;
     align-items: center;
-    gap:10px;   
+    gap:10px;
 }
 .sponsor-list{
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .sponsor-list-heading{
     color:#2563EB;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-weight: 600;
 }
 
@@ -437,7 +437,11 @@ footer {
 
 .social-media-icon{
     display: flex;
-    gap:20px;
+    gap:25px;
+}
+.social-media-icon a{
+    color:#0D1B2A;
+    font-size: 20px;
 }
 
 .footer-second-section-parent{
