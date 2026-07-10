@@ -18,10 +18,14 @@ body {
 a {
     text-decoration: none;
 }
+.blue{
+    color:#2563EB;
+}
+
 
 .container {
     padding: 0 20px;
-    max-width: 1320px;
+    max-width: 1200px;
     margin: 0 auto;
 
 }
@@ -323,11 +327,101 @@ nav a:hover {
     background: #ebebeb;
 }
 
+/* Sponsor Section */
+
+
+.sponsor-section{
+    padding:85px 0px;
+    background:#0D1B2A;
+    margin-top:30px ;
+}
+
+.sponsor-section-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsor-text-title{
+    color:#2563EB;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.sponsor-text-heading{
+    font-size: 48px;
+    color:#FFFFFF;
+}
+
+.sponsor-text-paragraph{
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 26px;
+    max-width: 650px;
+    margin: 0 auto 40px;
+    font-weight: 300px;
+    margin-top: 25px;
+    opacity: 80%;
+}
+
+.become-sponsor-link{
+    color:#2563EB;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap:10px;   
+}
+.sponsor-list{
+    margin-top: 50px;
+}
+
+.sponsor-list-heading{
+    color:#2563EB;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+
+.sponsor-card-parent{
+    display: flex;
+    justify-content: space-between;
+    gap:15px;
+    text-align: center;
+}
+.sponsor-card{
+    background:#ffffff;
+    padding:20px;
+    border-radius: 10px;
+    width:100%;
+    max-height: 160px;
+    display: grid;
+    justify-content: center;
+
+}
+.sponsor-card h4{
+    margin-top: auto;
+    color:#888888;
+    font-weight: 500;
+    font-size: 13px;
+    padding-top:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer Section */
 
 footer {
-    background: #0D1B2A;
+    
 }
 
 .footer-section{
@@ -338,7 +432,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
-    border-bottom: 1px solid rgb(58, 58, 58);
+    border-bottom: 1px solid #E5E7EB;
 }
 
 .social-media-icon{
@@ -355,10 +449,10 @@ footer {
 .footer-second-section-parent p,
 .common-link a{
     font-size: 16px;
-    color: #D1D5DB;
-    opacity: 60%;
+    color: #888888;
 }
 .common-link{
     display: flex;
     gap:25px;
 }
+
