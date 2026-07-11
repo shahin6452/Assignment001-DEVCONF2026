@@ -40,6 +40,11 @@ a {
 .btn:hover {
     background: #0040c0;
 }
+img{
+    display: block;
+    max-width:100%;
+    height: auto;
+}
 
 /*  Navbar Section */
 
@@ -75,21 +80,26 @@ nav a:hover {
     color: #0040c0;
 }
 
+/* Hero Section */
+
 .hero-section {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
         url('./images/banner.jpg');
-    height: 90vh;
+    min-height: 90vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: grid;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero-content-parent {
+    padding:80px 0px;
+    min-height: 90vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-content-parent h1 {
@@ -104,11 +114,11 @@ nav a:hover {
     color: #ffffff;
     line-height: 26px;
     max-width: 700px;
-    margin: 0 auto 40px;
-    font-weight: 300px;
+    font-weight: 300;
 }
 
 .hero-button {
+    margin-top: auto;
     background: #2563EB;
     color: #ffffff;
     font-size: 20px;
@@ -117,7 +127,6 @@ nav a:hover {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 30px;
     transition: .3s;
 }
 
@@ -190,7 +199,7 @@ nav a:hover {
     color: #575757;
     font-size: 16px;
     text-align: center;
-    margin: 10px auto 40px;
+    margin: 30px auto 40px;
 }
 
 .pricing-card-parent {
@@ -251,7 +260,7 @@ nav a:hover {
 }
 
 .pricing-card-content-list ul,
-.pricing-card-pro-content-list {
+.pricing-card-pro-content-list ul{
     padding-left: 16px;
     margin-top: 20px;
 }
@@ -289,6 +298,7 @@ nav a:hover {
     background: transparent;
     padding: 10px 0px;
     border-radius: 10px;
+    font-weight: 600;
     font-size: 14px;
     margin-top: 25px;
     cursor: pointer;
@@ -302,13 +312,15 @@ nav a:hover {
 .pricing-card-pro-btn {
     width: 100%;
     padding: 10px 0px;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 25px;
+    font-size: 14px;
 }
 
 .pricing-card-team-btn {
     width: 100%;
     color: #0D1B2A;
+    font-weight: 600;
     border: 1px solid #0D1B2A;
     background: transparent;
     padding: 10px 0px;
@@ -325,134 +337,126 @@ nav a:hover {
 
 /* Sponsor Section */
 
-
 .sponsor-section{
-    padding:85px 0px;
-    background:#0D1B2A;
-    margin-top:30px ;
+    padding: 85px 0px;
+    background: #0D1B2A;
+    margin-top: 30px;
 }
 
-.sponsor-section-content{
+.sponsor-section-content {
     display: flex;
     justify-content: space-between;
 }
 
-.sponsor-text-title{
-    color:#2563EB;
+.sponsor-text-title {
+    color: #2563EB;
     font-weight: 700;
     margin-bottom: 20px;
 }
-.sponsor-text-heading{
+
+.sponsor-text-heading {
     font-size: 48px;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
-.sponsor-text-paragraph{
+.sponsor-text-paragraph {
     font-size: 20px;
     color: #ffffff;
     line-height: 26px;
     max-width: 650px;
     margin: 0 auto 40px;
-    font-weight: 300px;
+    font-weight: 300;
     margin-top: 25px;
     opacity: 80%;
 }
 
-.become-sponsor-link{
-    color:#2563EB;
+.become-sponsor-link {
+    color: #2563EB;
     font-weight: 700;
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
 }
-.sponsor-list{
+
+.sponsor-list {
     margin-top: 60px;
 }
 
-.sponsor-list-heading{
-    color:#2563EB;
+.sponsor-list-heading {
+    color: #2563EB;
     text-align: center;
     margin-bottom: 30px;
     font-weight: 600;
 }
 
 
-.sponsor-card-parent{
+.sponsor-card-parent {
     display: flex;
     justify-content: space-between;
-    gap:15px;
+    gap: 15px;
     text-align: center;
 }
-.sponsor-card{
-    background:#ffffff;
-    padding:20px;
+
+.sponsor-card {
+    background: #ffffff;
+    padding: 20px;
     border-radius: 10px;
-    width:100%;
-    max-height: 160px;
+    width: 100%;
     display: grid;
     justify-content: center;
 
 }
-.sponsor-card h4{
-    margin-top: auto;
-    color:#888888;
-    font-weight: 500;
-    font-size: 13px;
-    padding-top:10px;
+
+.sponsor-card img {
+    max-width: 120px;
+    max-height: 60px;
+    object-fit: contain;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.sponsor-card h4 {
+    margin-top: auto;
+    color: #888888;
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 10px;
+}
 
 /* Footer Section */
 
-footer {
-    
+.footer-section {
+    padding: 30px 0px;
 }
 
-.footer-section{
-    padding:30px 0px;
-}
-
-.footer-first-section-parent{
+.footer-first-section-parent {
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
     border-bottom: 1px solid #E5E7EB;
 }
 
-.social-media-icon{
+.social-media-icon {
     display: flex;
-    gap:25px;
+    gap: 25px;
 }
-.social-media-icon a{
-    color:#0D1B2A;
+
+.social-media-icon a {
+    color: #0D1B2A;
     font-size: 20px;
 }
 
-.footer-second-section-parent{
+.footer-second-section-parent {
     display: flex;
     justify-content: space-between;
-    margin-top:25px;
+    margin-top: 25px;
 }
 
 .footer-second-section-parent p,
-.common-link a{
+.common-link a {
     font-size: 16px;
     color: #888888;
 }
-.common-link{
-    display: flex;
-    gap:25px;
-}
 
+.common-link {
+    display: flex;
+    gap: 25px;
+}
