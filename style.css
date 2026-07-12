@@ -65,7 +65,7 @@ header {
 
 }
 
-nav ul {
+nav ul{
     display: flex;
     gap: 30px;
     list-style: none;
@@ -84,8 +84,8 @@ nav a:hover {
 
 .hero-section {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url('./images/banner.jpg');
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('./images/banner.jpg');
     min-height: 90vh;
     background-repeat: no-repeat;
     background-position: center;
